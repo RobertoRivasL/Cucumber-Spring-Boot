@@ -1,0 +1,10 @@
+# Configuración para desarrollo
+# Autor: Roberto Rivas López
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:devdb
+    username: sa
+    password: 
+    
+# TODO: Completar configuración desarrollo

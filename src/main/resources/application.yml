@@ -1,0 +1,316 @@
+# Configuración principal de la aplicación
+# Autor: Roberto Rivas López
+# Proyecto: Cucumber Spring Boot
+
+# ==================== CONFIGURACIÓN DEL SERVIDOR ====================
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+    include-exception: false
+  compression:
+    enabled: true
+    mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json
+    min-response-size: 1024
+
+# ==================== CONFIGURACIÓN DE SPRING ====================
+spring:
+  application:
+    name: mi-proyecto-cucumber
+  
+  # Perfiles activos
+  profiles:
+    active: dev
+  
+  # ==================== BASE DE DATOS ====================
+  datasource:
+    url: jdbc:h2:mem:devdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+    
+  # Configuración H2 Console
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
+  
+  # ==================== JPA / HIBERNATE ====================
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        jdbc:
+          batch_size: 20
+        order_inserts: true
+        order_updates: true
+    open-in-view: false
+  
+  # ==================== SEGURIDAD ====================
+  security:
+    user:
+      name: admin
+      password: admin123
+      roles: ADMIN
+  
+  # ==================== JACKSON ====================
+  jackson:
+    default-property-inclusion: NON_NULL
+    serialization:
+      write-dates-as-timestamps: false
+      indent-output: true
+    deserialization:
+      fail-on-unknown-properties: false
+    time-zone: America/Santiago
+    locale: es_CL
+  
+  # ==================== INTERNACIONALIZACIÓN ====================
+  messages:
+    basename: messages
+    encoding: UTF-8
+    cache-duration: PT1H
+  
+  # ==================== CACHE ====================
+  cache:
+    type: simple
+    cache-names: usuarios, productos, roles
+  
+  # ==================== ACTUATOR ====================
+  management:
+    endpoints:
+      web:
+        exposure:
+          include: health,info,metrics,prometheus,env,beans,mappings
+        base-path: /actuator
+    endpoint:
+      health:
+        show-details: when_authorized
+        show-components: always
+    info:
+      env:
+        enabled: true
+      java:
+        enabled: true
+      os:
+        enabled: true
+    metrics:
+      export:
+        prometheus:
+          enabled: true
+
+# ==================== CONFIGURACIÓN PERSONALIZADA ====================
+aplicacion:
+  nombre: "Proyecto Cucumber - Roberto Rivas López"
+  version: "@project.version@"
+  descripcion: "Sistema de pruebas automatizadas con Cucumber y Spring Boot"
+  autor: "Roberto Rivas López"
+  
+  # Configuración JWT
+  jwt:
+    secreto: "clave-secreta-roberto-rivas-lopez-2024-muy-larga-y-segura-para-jwt-tokens"
+    duracion: 3600000  # 1 hora en milisegundos
+    refresh-duracion: 86400000  # 24 horas en milisegundos
+    header: "Authorization"
+    prefijo: "Bearer "
+  
+  # Configuración de CORS
+  cors:
+    allowed-origins: 
+      - "http://localhost:3000"
+      - "http://localhost:4200"
+      - "http://localhost:8081"
+    allowed-methods: 
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - OPTIONS
+    allowed-headers: 
+      - "*"
+    allow-credentials: true
+    max-age: 3600
+  
+  # Configuración de paginación
+  paginacion:
+    tamaño-default: 10
+    tamaño-maximo: 100
+  
+  # Configuración de seguridad
+  seguridad:
+    intentos-maximos-login: 5
+    tiempo-bloqueo-minutos: 15
+    longitud-minima-password: 8
+    requerir-mayuscula: true
+    requerir-numero: true
+    requerir-caracter-especial: true
+  
+  # Configuración de archivos
+  archivos:
+    ruta-subida: "uploads/"
+    tamaño-maximo-mb: 10
+    tipos-permitidos:
+      - "jpg"
+      - "jpeg"
+      - "png"
+      - "pdf"
+      - "docx"
+
+# ==================== LOGGING ====================
+logging:
+  level:
+    root: INFO
+    com.rrivasl: DEBUG
+    org.springframework.web: DEBUG
+    org.springframework.security: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    io.cucumber: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %logger{36} - %level - %msg%n"
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+  file:
+    name: logs/aplicacion.log
+    max-size: 10MB
+    max-history: 30
+
+# ==================== SPRINGDOC (Swagger/OpenAPI) ====================
+springdoc:
+  api-docs:
+    path: /api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+    doc-expansion: none
+    disable-swagger-default-url: true
+  info:
+    title: "API Proyecto Cucumber - Roberto Rivas López"
+    description: "API REST para sistema de pruebas automatizadas con Cucumber"
+    version: "@project.version@"
+    contact:
+      name: "Roberto Rivas López"
+      email: "rrivasl@empresa.com"
+    license:
+      name: "MIT License"
+      url: "https://opensource.org/licenses/MIT"
+
+# ==================== INFORMACIÓN DE LA APLICACIÓN ====================
+info:
+  app:
+    name: "@spring.application.name@"
+    description: "@project.description@"
+    version: "@project.version@"
+    encoding: "@project.build.sourceEncoding@"
+    java:
+      version: "@java.version@"
+  author:
+    name: "Roberto Rivas López"
+    email: "rrivasl@empresa.com"
+  build:
+    groupId: "@project.groupId@"
+    artifactId: "@project.artifactId@"
+    timestamp: "@maven.build.timestamp@"
+
+# ==================== CONFIGURACIÓN DE DESARROLLO ====================
+debug: false
+
+# Configuración específica para pruebas unitarias
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+  h2:
+    console:
+      enabled: false
+
+logging:
+  level:
+    root: WARN
+    com.rrivasl: DEBUG
+    io.cucumber: INFO
+
+aplicacion:
+  jwt:
+    secreto: "clave-de-prueba-roberto-rivas-lopez"
+    duracion: 600000  # 10 minutos para pruebas
+
+---
+# Configuración de desarrollo
+spring:
+  config:
+    activate:
+      on-profile: dev
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+
+logging:
+  level:
+    com.rrivasl: DEBUG
+
+---
+# Configuración de producción
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/mi_proyecto}
+    username: ${DATABASE_USERNAME:rrivasl}
+    password: ${DATABASE_PASSWORD:password123}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+  h2:
+    console:
+      enabled: false
+
+server:
+  port: ${PORT:8080}
+
+logging:
+  level:
+    root: WARN
+    com.rrivasl: INFO
+  file:
+    name: /var/log/aplicacion.log
+
+aplicacion:
+  jwt:
+    secreto: ${JWT_SECRET:clave-super-secreta-produccion-roberto-rivas-lopez}
+    duracion: ${JWT_DURATION:3600000}
