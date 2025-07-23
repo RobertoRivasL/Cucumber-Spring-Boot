@@ -1,13 +1,17 @@
 package com.rrivasl.pruebas.definiciones;
 
-import io.cucumber.java.es.*;
+import io.cucumber.java.es.Dado;
+import io.cucumber.java.es.Cuando;
+import io.cucumber.java.es.Entonces;
 import io.cucumber.datatable.DataTable;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import java.util.HashMap;
 import java.util.Map;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import com.rrivasl.pruebas.definiciones.ContextoTest;
 
 /**
  * Definiciones de pasos para generación de reportes
@@ -22,7 +26,7 @@ public class DefinicionesReportes {
     private String formatoReporte;
     private boolean reporteGenerado = false;
     private Map<String, Object> contenidoReporte = new HashMap<>();
-    private Integer codigoRespuestaSimulado;
+    // El status se maneja ahora con ContextoTest
     private boolean datosDisponibles = true;
     
     @Dado("que estoy autenticado con permisos de reportes")
@@ -59,8 +63,7 @@ public class DefinicionesReportes {
         if (datosDisponibles) {
             reporteGenerado = true;
             formatoReporte = "PDF";
-            codigoRespuestaSimulado = 200;
-            
+            ContextoTest.ultimoCodigoEstado = 200;
             // Simular contenido del reporte
             contenidoReporte.put("totalUsuarios", 150);
             contenidoReporte.put("usuariosActivos", 127);
@@ -70,14 +73,12 @@ public class DefinicionesReportes {
                 "USUARIO", 120,
                 "MODERADOR", 2
             ));
-            
             System.out.println("✅ Reporte de usuarios activos generado");
         } else {
-            codigoRespuestaSimulado = 400;
+            ContextoTest.ultimoCodigoEstado = 400;
             System.out.println("❌ No hay datos suficientes para el reporte");
         }
     }
-    
     @Cuando("genero un reporte de inventario")
     public void generoUnReporteDeInventario() {
         System.out.println("📦 Generando reporte de inventario");
@@ -86,7 +87,7 @@ public class DefinicionesReportes {
         if (datosDisponibles) {
             reporteGenerado = true;
             formatoReporte = "PDF";
-            codigoRespuestaSimulado = 200;
+            ContextoTest.ultimoCodigoEstado = 200;
             
             // Simular contenido del reporte de inventario
             contenidoReporte.put("stockBajo", Map.of(
@@ -106,7 +107,7 @@ public class DefinicionesReportes {
             
             System.out.println("✅ Reporte de inventario generado");
         } else {
-            codigoRespuestaSimulado = 400;
+            ContextoTest.ultimoCodigoEstado = 400;
         }
     }
     
@@ -116,7 +117,7 @@ public class DefinicionesReportes {
         
         if ("ventas_mensuales".equals(tipoReporteSolicitado)) {
             reporteGenerado = true;
-            codigoRespuestaSimulado = 200;
+            ContextoTest.ultimoCodigoEstado = 200;
             
             // Simular contenido del reporte de ventas
             contenidoReporte.put("ventasDiarias", generarDatosVentasDiarias());

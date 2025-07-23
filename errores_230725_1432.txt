@@ -1,0 +1,69 @@
+ERROR] COMPILATION ERROR :
+[INFO] -------------------------------------------------------------
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[182,5] illegal start of expression
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[187,11] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[190,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[191,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[192,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[193,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[194,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[196,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[197,5] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[200,12] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[203,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[206,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[208,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[209,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[211,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[212,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[213,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[214,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[216,17] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[217,17] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[218,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[222,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[223,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[224,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[225,13] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[226,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[229,5] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[232,12] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[234,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[236,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[237,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[238,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[240,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[241,5] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[244,12] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[246,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[247,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[249,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[251,5] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[254,12] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[257,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[258,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[261,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[262,5] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[265,12] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[267,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[268,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[270,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[274,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[277,5] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[280,12] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[282,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[284,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[285,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[286,5] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[289,12] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[292,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[293,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[294,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[296,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[297,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[298,9] class, interface, enum, or record expected
+[ERROR] /D:/Doc_HP_RRL/RRL/Sence/Iseg Spa/Modulo 5/Ejercicios/Generador BDD_01/src/test/java/com/rrivasl/pruebas/definiciones/DefinicionesUsuarios.java:[299,5] class, interface, enum, or record expected
+[INFO] 63 errors
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE

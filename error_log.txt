@@ -1,0 +1,23 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.rrivasl:mi-proyecto-cucumber >------------------
+[INFO] Building Proyecto Cucumber Spring Boot 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ mi-proyecto-cucumber ---
+[INFO] Deleting D:\Doc_HP_RRL\RRL\Sence\Iseg Spa\Modulo 5\Ejercicios\Generador BDD_01\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mi-proyecto-cucumber ---
+[INFO] Copying 2 resources from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mi-proyecto-cucumber ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 14 source files with javac [debug release 17] to target\classes
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  29.276 s
+[INFO] Finished at: 2025-07-23T14:07:13-04:00
+[INFO] ------------------------------------------------------------------------

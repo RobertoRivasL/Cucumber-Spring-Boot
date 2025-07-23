@@ -5,77 +5,71 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * Interfaz Servicio Usuario
- * Principio aplicado: Abstracción, Inversión de Dependencias
+ * Interfaz del Servicio de Usuarios
  * @author Roberto Rivas López
+ * Principios aplicados: Abstracción, Separación de Intereses
  */
 public interface ServicioUsuario {
     
     /**
-     * Crea un nuevo usuario en el sistema
-     * @param usuario Usuario a crear
-     * @return Usuario creado con ID asignado
-     * @throws RuntimeException si el correo ya existe o la contraseña es inválida
+     * Crear un nuevo usuario en el sistema
+     * @param usuario datos del usuario a crear
+     * @return usuario creado con ID asignado
      */
     Usuario crearUsuario(Usuario usuario);
     
     /**
-     * Verifica si un correo electrónico ya está registrado
-     * @param correo Correo a verificar
-     * @return true si el correo existe, false en caso contrario
-     */
-    boolean existeCorreoElectronico(String correo);
-    
-    /**
-     * Busca un usuario por su ID
-     * @param id ID del usuario
-     * @return Optional con el usuario si existe
+     * Buscar usuario por su ID
+     * @param id identificador del usuario
+     * @return usuario encontrado o Optional.empty()
      */
     Optional<Usuario> buscarPorId(Long id);
     
     /**
-     * Busca un usuario por su nombre de usuario
-     * @param nombreUsuario Nombre de usuario
-     * @return Optional con el usuario si existe
+     * Buscar usuario por nombre de usuario
+     * @param nombreUsuario nombre único del usuario
+     * @return usuario encontrado o Optional.empty()
      */
     Optional<Usuario> buscarPorNombreUsuario(String nombreUsuario);
     
     /**
-     * Busca usuarios aplicando filtros
-     * @param nombre Filtro por nombre (parcial)
-     * @param rol Filtro por rol
-     * @param estadoActivo Filtro por estado activo
-     * @return Lista de usuarios que coinciden con los filtros
+     * Buscar usuario por correo electrónico
+     * @param correoElectronico email del usuario
+     * @return usuario encontrado o Optional.empty()
      */
-    List<Usuario> buscarConFiltros(String nombre, String rol, Boolean estadoActivo);
+    Optional<Usuario> buscarPorCorreoElectronico(String correoElectronico);
     
     /**
-     * Actualiza los datos de un usuario existente
-     * @param id ID del usuario a actualizar
-     * @param usuarioActualizado Datos actualizados
-     * @return Usuario actualizado
-     * @throws RuntimeException si el usuario no existe
+     * Obtener todos los usuarios del sistema
+     * @return lista de todos los usuarios
      */
-    Usuario actualizarUsuario(Long id, Usuario usuarioActualizado);
+    List<Usuario> obtenerTodosLosUsuarios();
     
     /**
-     * Desactiva un usuario (cambio de estado)
-     * @param id ID del usuario a desactivar
-     * @throws RuntimeException si el usuario no existe
+     * Actualizar datos de un usuario existente
+     * @param id identificador del usuario
+     * @param usuario nuevos datos del usuario
+     * @return usuario actualizado
+     */
+    Usuario actualizarUsuario(Long id, Usuario usuario);
+    
+    /**
+     * Desactivar un usuario (cambiar estado a INACTIVO)
+     * @param id identificador del usuario
      */
     void desactivarUsuario(Long id);
     
     /**
-     * Obtiene todos los usuarios del sistema
-     * @return Lista de todos los usuarios
+     * Validar si un correo electrónico ya existe
+     * @param correoElectronico email a validar
+     * @return true si existe, false si no existe
      */
-    List<Usuario> obtenerTodos();
+    boolean existeCorreoElectronico(String correoElectronico);
     
     /**
-     * Valida las credenciales de un usuario
-     * @param nombreUsuario Nombre de usuario
-     * @param contrasena Contraseña
-     * @return true si las credenciales son válidas
+     * Validar si un nombre de usuario ya existe
+     * @param nombreUsuario nombre a validar
+     * @return true si existe, false si no existe
      */
-    boolean validarCredenciales(String nombreUsuario, String contrasena);
+    boolean existeNombreUsuario(String nombreUsuario);
 }
